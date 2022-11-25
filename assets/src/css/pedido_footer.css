@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+footer{
+	z-index: 10;
+	width: 100%;
+	height: 80px;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	background: #E31B27;
+	display: flex; 
+	align-items: center;
+	justify-content: space-evenly;
+
+}
+footer a{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+footer p{
+	color: white;
+	font-size: 18px;
+	font-family: 'Poppins', sans-serif;
+}
+footer a{
+	text-decoration: none;
+}
+#price{
+	border-bottom: 1px solid white;
+	padding-bottom: 1 10px
+}
+#footer_img{
+	width: 50px;
+}
+#footer-content{
+	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+}
+#text-cart{
+	font-family: 'Poppins', sans-serif;
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+	width: 25%;
+}
+@media screen and (max-width: 900px) {
+    footer{
+    	width: 100%;
+    	height: 70px;
+    	border-radius: 0;
+    }
+    #text-cart{
+    	visibility: hidden;
+    }
+}

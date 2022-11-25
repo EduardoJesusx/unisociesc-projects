@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	letter-spacing: 1px;
+}
+body{
+	color: white;
+	background: #e5e5e5;
+	margin-top: 100px;
+}
+#cardapio{
+	z-index: 2;
+	margin: 100px 5vw;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+.card{
+	z-index: 2;
+	margin: 2.5%;
+	background: white;
+	width: 170px;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 1px 2px 8px #00000057;
+	transition: 1.1s;
+}
+.content{
+	font-size: 20px;
+	padding-top: 5px;
+	display: flex;
+	border-radius:  0 0 15px 15px ;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Poppins', sans-serif;
+	background: #388b0f;
+	width: 100%;
+	height: 75px;
+	margin-top: -10px;
+	padding-top: 10px;
+	z-index: 10;
+}
+.content p{
+	text-align: center;
+}
+.card:hover{
+    box-shadow: 1px 2px 13px 6px #00000057;
+    transform: scale(1.03);
+}
+.card:hover .pizza-img{
+	transform: scale(1.15) translateY(-5px);
+	margin-bottom:-30px;
+}
+.img img{
+	width: 170px;
+	margin-bottom: -65px;
+	transition: 1.2s;
+}
+.add img{	
+	width: 40px;
+	transition: 1.2s;
+	margin-left: 155px;
+	margin-top: -20px;
+}
+.add img:hover{
+	transform: scale(1.2);
+}
+@media (max-width: 450px) {
+	#cardapio{
+	margin: 20vh -3vw;
+
+	}
+}
